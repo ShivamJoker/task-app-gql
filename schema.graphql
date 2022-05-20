@@ -1,0 +1,37 @@
+﻿schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Mutation {
+  #  In this example, only users in the ManagerGroup can create tasks
+  createTask(
+    description: String!
+    owner: String!
+    taskStatus: String!
+    title: String!
+  ): Task
+  updateTaskBody(description: String!, id: ID!, title: String!): Task
+  #  Both Employees and Managers can update a task's status
+  updateTaskStatus(id: ID!, taskStatus: String!): Task
+}
+
+type Query {
+  #  Only Managers can list all the Tasks
+  allTasks(nextToken: String): TaskConnection
+  #  Users belonging to both EmployeesGroup and ManagerGroup can read a particular task
+  getTask(id: ID!): Task
+}
+
+type Task {
+  description: String!
+  id: ID!
+  owner: String!
+  taskStatus: String
+  title: String!
+}
+
+type TaskConnection {
+  items: [Task]
+  nextToken: String
+}
