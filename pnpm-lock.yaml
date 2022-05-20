@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@types/react': ^18.0.0
@@ -8,13 +8,15 @@ specifiers:
   react: ^18.0.0
   react-dom: ^18.0.0
   react-query: ^3.39.0
+  spinners-react: ^1.0.7
   typescript: ^4.6.3
   vite: ^2.9.9
 
 dependencies:
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
-  react-query: 3.39.0_react-dom@18.1.0+react@18.1.0
+  react-query: 3.39.0_ef5jwxihqo6n7gxfmzogljlgcm
+  spinners-react: 1.0.7_e6senhi6gkhdouiqizr2s56gsi
 
 devDependencies:
   '@types/react': 18.0.9
@@ -969,7 +971,7 @@ packages:
       scheduler: 0.22.0
     dev: false
 
-  /react-query/3.39.0_react-dom@18.1.0+react@18.1.0:
+  /react-query/3.39.0_ef5jwxihqo6n7gxfmzogljlgcm:
     resolution: {integrity: sha512-Od0IkSuS79WJOhzWBx/ys0x13+7wFqgnn64vBqqAAnZ9whocVhl/y1padD5uuZ6EIkXbFbInax0qvY7zGM0thA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1056,6 +1058,20 @@ packages:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /spinners-react/1.0.7_e6senhi6gkhdouiqizr2s56gsi:
+    resolution: {integrity: sha512-Xcgpc7Ybm6HOrpCVJjbH1G/NV852HaV4Zc9T1sJ2+S2hn05lGiBZS1dBOKGLc1kp8wv2sd3wtt94I/NNqDjs3Q==}
+    peerDependencies:
+      '@types/react': ^16.x || ^17.x || ^18.x
+      '@types/react-dom': ^16.x || ^17.x || ^18.x
+      react: ^16.x || ^17.x || ^18.x
+      react-dom: ^16.x || ^17.x || ^18.x
+    dependencies:
+      '@types/react': 18.0.9
+      '@types/react-dom': 18.0.4
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
 
   /string-width/4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
